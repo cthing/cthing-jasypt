@@ -1,0 +1,15 @@
+.settings
+.checkstyle
+.classpath
+.project
+.idea
+*.ipr
+*.iws
+*.iml
+.springBeans
+.DS_Store
+test-output
+bin
+build
+.gradle
+*.hprof

@@ -1,0 +1,25 @@
+/*
+ * Copyright 2020 C Thing Software
+ * All rights reserved.
+ */
+package com.cthing.jasypt;
+
+import org.jasypt.encryption.pbe.PBEStringEncryptor;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+
+public class CthingStringEncryptorTest {
+
+    @ParameterizedTest
+    @ValueSource(strings = { "", " ", "hello", "123", "asdf234^(**%$" })
+    public void testEncrypt(final String message) {
+        final PBEStringEncryptor encryptor = new CthingStringEncryptor();
+        encryptor.setPassword("Password1234");
+        final String encrypted = encryptor.encrypt(message);
+        final String decrypted = encryptor.decrypt(encrypted);
+        assertThat(decrypted).isEqualTo(message);
+    }
+}
