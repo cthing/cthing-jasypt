@@ -22,7 +22,7 @@ apply {
 
 configure<ProjectInfoExtension> {
     description = "Provides custom configured Jasypt encryptors."
-    projectUrl = "https://bitbucket.org/cthing/cthing-jasypt/"
+    projectUrl = "https://github.com/baron1405/cthing-jasypt/"
     reportsUrl = "http://dist.lan/nexus/content/sites/cthing-jasypt-site/"
 }
 

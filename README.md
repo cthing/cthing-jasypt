@@ -1,3 +1,4 @@
-# cthing-jasypt 0.1.0
-### C Thing Software
+# ![C Thing Software](http://www.cthing.com/images/Logo.gif "C Thing Software") cthing-jasypt
 Provides custom configured Jasypt encryptors.
+### License
+[C Thing Software Internal Use Only](http://www.cthing.com/licenses/internal.txt)
