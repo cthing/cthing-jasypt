@@ -6,9 +6,7 @@ plugins {
 
 buildscript {
     dependencies {
-        classpath("com.cthing:gradle-core-plugins:0.1.0-0") {
-             isForce = true
-        }
+        classpath("com.cthing:gradle-core-plugins:0.1.0-+")
         classpath("com.cthing:gradle-yalocc-plugin:0.1.0-+")
         classpath("com.cthing:gradle-project-site-plugin:0.1.0-+")
         classpath("com.cthing:gradle-dependency-analysis-plugin:0.1.0-+")
