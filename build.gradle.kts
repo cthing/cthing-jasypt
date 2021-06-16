@@ -23,15 +23,15 @@ apply {
 configure<ProjectInfoExtension> {
     description.set("Provides custom configured Jasypt encryptors.")
     projectUrl.set("https://github.com/baron1405/cthing-jasypt/")
-    reportsUrl.set("http://dist.lan/nexus/content/sites/cthing-jasypt-site/")
+    reportsUrl.set("https://dist.lan/nexus/content/sites/cthing-jasypt-site/")
 }
 
 dependencies {
     api("org.jasypt:jasypt:1.9.3")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
-    testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.1")
-    testImplementation("org.assertj:assertj-core:3.19.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.2")
+    testImplementation("org.assertj:assertj-core:3.20.0")
 
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.2")
 }
