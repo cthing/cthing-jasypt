@@ -1,26 +1,12 @@
-import com.cthing.gradle.plugins.core.ProjectInfoExtension
-
 plugins {
     `java-library`
+    id("com.cthing.java-project") version("0.1.0-+")
+    id("com.cthing.yalocc") version("0.1.0-+")
+    id("com.cthing.project-site") version("0.1.0-+")
+    id("com.cthing.dependency-analysis") version("0.1.0-+")
 }
 
-buildscript {
-    dependencies {
-        classpath("com.cthing:gradle-core-plugins:0.1.0-+")
-        classpath("com.cthing:gradle-yalocc-plugin:0.1.0-+")
-        classpath("com.cthing:gradle-project-site-plugin:0.1.0-+")
-        classpath("com.cthing:gradle-dependency-analysis-plugin:0.1.0-+")
-    }
-}
-
-apply {
-    plugin("com.cthing.java-project")
-    plugin("com.cthing.yalocc")
-    plugin("com.cthing.project-site")
-    plugin("com.cthing.dependency-analysis")
-}
-
-configure<ProjectInfoExtension> {
+projectInfo {
     description.set("Provides custom configured Jasypt encryptors.")
     projectUrl.set("https://github.com/baron1405/cthing-jasypt/")
     reportsUrl.set("https://dist-3.lan/repository/sites/cthing-jasypt-site/")
