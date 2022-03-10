@@ -11,8 +11,8 @@ plugins {
 
 projectInfo {
     description.set("Provides custom configured Jasypt encryptors.")
-    projectUrl.set("https://github.com/baron1405/cthing-jasypt/")
-    reportsUrl.set("https://dist-3.lan/repository/sites/cthing-jasypt-site/")
+    projectUrl.set("https://github.com/cthing/cthing-jasypt/")
+    reportsUrl.set("https://dist-4.lan/repository/sites/cthing-jasypt-site/")
 }
 
 dependencies {
