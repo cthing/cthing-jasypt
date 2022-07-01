@@ -8,7 +8,7 @@ projectSite = { id = "com.cthing.project-site", version = "0.1.0-+" }
 yalocc = { id = "com.cthing.yalocc", version = "0.1.0-+" }
 
 [libraries]
-assertJ = "org.assertj:assertj-core:3.22.0"
+assertJ = "org.assertj:assertj-core:3.23.1"
 jasypt = "org.jasypt:jasypt:1.9.3"
 junitApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
 junitEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
