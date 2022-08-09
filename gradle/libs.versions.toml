@@ -1,5 +1,5 @@
 [versions]
-junit = "5.8.2"
+junit = "5.9.0"
 
 [plugins]
 dependencyAnalysis = { id = "com.cthing.dependency-analysis", version = "0.2.0-+" }
