@@ -9,9 +9,9 @@ plugins {
 }
 
 projectInfo {
-    description.set("Provides custom configured Jasypt encryptors.")
-    projectUrl.set("https://github.com/cthing/cthing-jasypt/")
-    reportsUrl.set("https://dist-4.lan/repository/sites/cthing-jasypt-site/")
+    description = "Provides custom configured Jasypt encryptors."
+    projectUrl = "https://github.com/cthing/cthing-jasypt/"
+    reportsUrl = "https://dist-4.lan/repository/sites/cthing-jasypt-site/"
 }
 
 dependencies {
@@ -22,4 +22,5 @@ dependencies {
     testImplementation(libs.assertJ)
 
     testRuntimeOnly(libs.junitEngine)
+    testRuntimeOnly(libs.junitLauncher)
 }
