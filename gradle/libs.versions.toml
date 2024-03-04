@@ -2,7 +2,6 @@
 junit = "5.10.2"
 
 [plugins]
-dependencyAnalysis = { id = "com.cthing.dependency-analysis", version = "0.3.0-+" }
 javaProject = { id = "com.cthing.java-project", version = "0.3.0-+" }
 projectSite = { id = "com.cthing.project-site", version = "0.4.0-+" }
 yalocc = { id = "com.cthing.yalocc", version = "0.4.0-+" }

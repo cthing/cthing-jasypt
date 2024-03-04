@@ -5,7 +5,6 @@ plugins {
     alias(libs.plugins.javaProject)
     alias(libs.plugins.yalocc)
     alias(libs.plugins.projectSite)
-    alias(libs.plugins.dependencyAnalysis)
 }
 
 projectInfo {
