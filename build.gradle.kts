@@ -3,7 +3,7 @@ apply(from = File(gradle.gradleUserHomeDir, "cthing-repositories.gradle.kts"))
 plugins {
     `java-library`
     alias(libs.plugins.javaProject)
-    alias(libs.plugins.yalocc)
+    alias(libs.plugins.locc)
     alias(libs.plugins.projectSite)
 }
 
