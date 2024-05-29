@@ -1,3 +1,6 @@
+import org.cthing.projectversion.BuildType
+import org.cthing.projectversion.ProjectVersion
+
 apply(from = File(gradle.gradleUserHomeDir, "cthing-repositories.gradle.kts"))
 
 plugins {
@@ -6,6 +9,8 @@ plugins {
     alias(libs.plugins.locc)
     alias(libs.plugins.projectSite)
 }
+
+version = ProjectVersion("0.2.0", BuildType.snapshot)
 
 projectInfo {
     description = "Provides custom configured Jasypt encryptors."
