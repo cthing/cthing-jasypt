@@ -15,7 +15,7 @@ version = ProjectVersion("0.2.0", BuildType.snapshot)
 projectInfo {
     description = "Provides custom configured Jasypt encryptors."
     projectUrl = "https://github.com/cthing/cthing-jasypt/"
-    reportsUrl = "https://dist-4.lan/repository/sites/cthing-jasypt-site/"
+    reportsUrl = "https://dist-5.lan/repository/sites/cthing-jasypt-site/"
 }
 
 dependencies {
