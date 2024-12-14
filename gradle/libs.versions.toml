@@ -1,5 +1,5 @@
 [versions]
-junit = "5.11.2"
+junit = "5.11.3"
 
 [plugins]
 javaProject = { id = "com.cthing.java-project", version = "0.3.0-+" }
@@ -11,5 +11,5 @@ assertJ = "org.assertj:assertj-core:3.26.3"
 jasypt = "org.jasypt:jasypt:1.9.3"
 junitApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
 junitEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
-junitLauncher = "org.junit.platform:junit-platform-launcher:1.11.2"
+junitLauncher = "org.junit.platform:junit-platform-launcher:1.11.3"
 junitParams = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit" }
