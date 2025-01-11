@@ -11,9 +11,10 @@ plugins {
 }
 
 version = ProjectVersion("0.2.0", BuildType.snapshot)
+group = "com.cthing"
+description = "Provides custom configured Jasypt encryptors."
 
 projectInfo {
-    description = "Provides custom configured Jasypt encryptors."
     projectUrl = "https://github.com/cthing/cthing-jasypt/"
     reportsUrl = "https://dist-5.lan/repository/sites/cthing-jasypt-site/"
 }
