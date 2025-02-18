@@ -7,7 +7,6 @@ plugins {
     `java-library`
     alias(libs.plugins.javaProject)
     alias(libs.plugins.locc)
-    alias(libs.plugins.projectSite)
 }
 
 version = ProjectVersion("0.2.0", BuildType.snapshot)
@@ -16,7 +15,6 @@ description = "Provides custom configured Jasypt encryptors."
 
 projectInfo {
     projectUrl = "https://github.com/cthing/cthing-jasypt/"
-    reportsUrl = "https://dist-5.lan/repository/sites/cthing-jasypt-site/"
 }
 
 dependencies {

@@ -3,7 +3,6 @@ junit = "5.11.3"
 
 [plugins]
 javaProject = { id = "com.cthing.java-project", version = "0.4.0-+" }
-projectSite = { id = "com.cthing.project-site", version = "0.4.0-+" }
 locc = { id = "org.cthing.locc", version = "2.0.0" }
 
 [libraries]
