@@ -13,10 +13,6 @@ version = ProjectVersion("0.2.0", BuildType.snapshot)
 group = "com.cthing"
 description = "Provides custom configured Jasypt encryptors."
 
-projectInfo {
-    projectUrl = "https://github.com/cthing/cthing-jasypt/"
-}
-
 dependencies {
     api(libs.jasypt)
 
