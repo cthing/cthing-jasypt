@@ -3,7 +3,7 @@ junit = "5.13.2"
 
 [plugins]
 javaProject = { id = "com.cthing.java-project", version = "0.4.0-+" }
-locc = { id = "org.cthing.locc", version = "2.0.0" }
+locc = { id = "org.cthing.locc", version = "2.1.0" }
 
 [libraries]
 assertJ = "org.assertj:assertj-core:3.27.3"
