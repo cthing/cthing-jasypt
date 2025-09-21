@@ -52,13 +52,16 @@ Perform the following steps to create a release.
 - Commit the changes
 - Wait until CI builds the release candidate
 - Run the command `mkrelease cthing-jasypt <version>`
-- In a browser go to the [Maven Central Repository Manager](https://s01.oss.sonatype.org/)
+- In a browser go to the [Maven Central Repository](https://central.sonatype.com/)
 - Log in
-- Use the `Staging Upload` to upload the generated artifact bundle `cthing-jasypt-bundle-<version>.jar`
-- Click on `Staging Repositories`
-- Once it is enabled, press `Release` to release the artifacts to Maven Central
+- Select `Publish` from the menubar
+- Press `Public Component`
+- Enter a name for the deployment
+- Choose the file `cthing-jasypt-bundle-<version>.zip`
+- Press `Publish Component`
+- Once the deployment has been validated, press `Publish`
+- Refresh the page until the status is `Published`
 - Log out
-- Wait for the new release to be available on Maven Central
 - In a browser, go to the project on GitHub
 - Generate a release with the tag `<version>`
 - In the build.gradle.kts file, edit the `ProjectVersion` object
@@ -67,3 +70,4 @@ Perform the following steps to create a release.
 - Update the `CHANGELOG.md` with the changes in the release and prepare for next release changes
 - Update the `Usage` section in the `README.md` with the latest artifact release version
 - Commit these changes
+- Delete the file `cthing-jasypt-bundle-<version>.zip`
