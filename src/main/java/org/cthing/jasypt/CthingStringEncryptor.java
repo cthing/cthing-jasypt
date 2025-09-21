@@ -1,8 +1,8 @@
 /*
- * Copyright 2020 C Thing Software
- * All rights reserved.
+ * Copyright 2025 C Thing Software
+ * SPDX-License-Identifier: Apache-2.0
  */
-package com.cthing.jasypt;
+package org.cthing.jasypt;
 
 import org.jasypt.encryption.pbe.PBEStringEncryptor;
 import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
@@ -52,6 +52,9 @@ public class CthingStringEncryptor implements PBEStringEncryptor {
 
     private final PooledPBEStringEncryptor encryptor;
 
+    /**
+     * Constructs and configures a string encryptor. The instance can be reused.
+     */
     public CthingStringEncryptor() {
         final SimpleStringPBEConfig config = new SimpleStringPBEConfig();
         config.setAlgorithm(ALGORITHM);

@@ -1,8 +1,8 @@
 /*
- * Copyright 2020 C Thing Software
- * All rights reserved.
+ * Copyright 2025 C Thing Software
+ * SPDX-License-Identifier: Apache-2.0
  */
-package com.cthing.jasypt;
+package org.cthing.jasypt;
 
 import org.jasypt.encryption.pbe.PBEStringEncryptor;
 import org.junit.jupiter.params.ParameterizedTest;
