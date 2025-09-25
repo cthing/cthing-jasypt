@@ -1,7 +1,7 @@
 # ![C Thing Software](https://www.cthing.com/branding/CThingSoftware-57x60.png "C Thing Software") cthing-jasypt
 
 [![CI](https://github.com/cthing/cthing-jasypt/actions/workflows/ci.yml/badge.svg)](https://github.com/cthing/cthing-jasypt/actions/workflows/ci.yml)
-[![Maven Central Version](https://img.shields.io/maven-central/v/org.cthing/cthing-jasypt)](https://maven-badges.herokuapp.com/maven-central/org.cthing/cthing-jasypt)
+[![Maven Central Version](https://img.shields.io/maven-central/v/org.cthing/cthing-jasypt)](https://central.sonatype.com/artifact/org.cthing/cthing-jasypt)
 [![javadoc](https://javadoc.io/badge2/org.cthing/cthing-jasypt/javadoc.svg)](https://javadoc.io/doc/org.cthing/cthing-jasypt)
 
 Provides preconfigured Jasypt encryptors.
