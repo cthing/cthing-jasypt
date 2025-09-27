@@ -41,9 +41,9 @@ java {
 
 dependencies {
     api(libs.jasypt)
-    api(libs.jspecify)
 
-    testImplementation(libs.junitApi)
+    compileOnly(libs.jspecify)
+
     testImplementation(libs.junitParams)
     testImplementation(libs.assertJ)
 
