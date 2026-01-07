@@ -6,6 +6,7 @@ package org.cthing.jasypt;
 
 import org.jasypt.encryption.pbe.PBEStringEncryptor;
 import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
+import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.jasypt.encryption.pbe.config.SimpleStringPBEConfig;
 
 
@@ -45,12 +46,11 @@ public class CthingStringEncryptor implements PBEStringEncryptor {
 
     private static final String ALGORITHM = "PBEWITHHMACSHA512ANDAES_256";
     private static final int KEY_ITERATIONS = 1000;
-    private static final String POOL_SIZE = "1";
     private static final String SALT_CLASS = "org.jasypt.salt.RandomSaltGenerator";
     private static final String IV_CLASS = "org.jasypt.iv.RandomIvGenerator";
     private static final String OUTPUT_FORMAT = "base64";
 
-    private final PooledPBEStringEncryptor encryptor;
+    private final StandardPBEStringEncryptor encryptor;
 
     /**
      * Constructs and configures a string encryptor. The instance can be reused.
@@ -59,18 +59,26 @@ public class CthingStringEncryptor implements PBEStringEncryptor {
         final SimpleStringPBEConfig config = new SimpleStringPBEConfig();
         config.setAlgorithm(ALGORITHM);
         config.setKeyObtentionIterations(KEY_ITERATIONS);
-        config.setPoolSize(POOL_SIZE);
         config.setSaltGeneratorClassName(SALT_CLASS);
         config.setIvGeneratorClassName(IV_CLASS);
         config.setStringOutputType(OUTPUT_FORMAT);
 
-        this.encryptor = new PooledPBEStringEncryptor();
+        this.encryptor = new StandardPBEStringEncryptor();
         this.encryptor.setConfig(config);
     }
 
     @Override
     public void setPassword(final String password) {
         this.encryptor.setPassword(password);
+    }
+
+    /**
+     * Allows setting the password using a character array for use in high security situations.
+     *
+     * @param password Password to set
+     */
+    public void setPassword(final char[] password) {
+        this.encryptor.setPasswordCharArray(password);
     }
 
     @Override

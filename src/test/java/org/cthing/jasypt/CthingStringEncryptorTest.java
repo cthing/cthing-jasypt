@@ -15,9 +15,19 @@ public class CthingStringEncryptorTest {
 
     @ParameterizedTest
     @ValueSource(strings = { "", " ", "hello", "123", "asdf234^(**%$" })
-    public void testEncrypt(final String message) {
+    public void testEncryptUsingStringPassword(final String message) {
         final PBEStringEncryptor encryptor = new CthingStringEncryptor();
         encryptor.setPassword("Password1234");
+        final String encrypted = encryptor.encrypt(message);
+        final String decrypted = encryptor.decrypt(encrypted);
+        assertThat(decrypted).isEqualTo(message);
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = { "", " ", "hello", "123", "asdf234^(**%$" })
+    public void testEncryptUsingCharArrayPassword(final String message) {
+        final CthingStringEncryptor encryptor = new CthingStringEncryptor();
+        encryptor.setPassword("Password1234".toCharArray());
         final String encrypted = encryptor.encrypt(message);
         final String decrypted = encryptor.decrypt(encrypted);
         assertThat(decrypted).isEqualTo(message);
