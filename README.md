@@ -12,12 +12,12 @@ The library is available from [Maven Central](https://repo.maven.apache.org/mave
 <dependency>
   <groupId>org.cthing</groupId>
   <artifactId>cthing-jasypt</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 or the following Gradle dependency:
 ```kotlin
-implementation("org.cthing:cthing-jasypt:1.0.0")
+implementation("org.cthing:cthing-jasypt:1.1.0")
 ```
 
 ### Standalone Usage
